@@ -1,4 +1,4 @@
-#printin multiplication table using for loop
+#printing multiplication table using for loop
 n=int(input("enter a number"))
 r1=int(input("enter starting range"))
 r2=int(input("enter ending range"))
