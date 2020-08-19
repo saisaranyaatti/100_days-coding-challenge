@@ -1,3 +1,4 @@
+#checking the given number is Armstrong or not by using while loop
 def armstrong(n):
     temp=n
     sum=0
@@ -12,6 +13,7 @@ def armstrong(n):
 n=int(input("enter a number"))
 print(armstrong(n))
 
+#checking the given number is armstrong or not by using for loop
 def armstrong(n):
     sum=0
     for i in n:
@@ -23,7 +25,7 @@ def armstrong(n):
 n=input("enter a number")
 print(armstrong(n))
 
-
+#checking the given number is armstrong or not by using recursion
 def armstrong(n):
     if n==0:
         return 0
