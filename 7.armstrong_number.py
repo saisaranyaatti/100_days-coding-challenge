@@ -1,0 +1,42 @@
+#checking the given number is armstrong or not by using while loop
+def armstrong(n):
+    sum=0
+    size=len(str(n))
+    temp=n
+    while n>0:
+        rem=n%10
+        sum+=rem**size
+        n//=10
+    if temp==sum:
+        return True
+    else:
+        return False
+n=int(input("enter a number"))
+print(armstrong(n))
+
+#checking the given number is armstrong or not by using for loop
+def armstrong(n):
+    sum=0
+    size=len(str(n))
+    for i in n:
+        sum+=int(i)**size
+    if sum==int(n):
+        return True
+    else:
+        return False
+n=input("enter a number")
+print(armstrong(n))
+
+#checking the given number is armstrong or not by using recursion
+n=int(input("enter a number"))
+size=len(str(n))
+def armstrong(n):
+    if n==0:
+        return 0
+    else:
+        return (n%10)**size+armstrong(n//10)
+if(armstrong(n)==n):
+    print("True")
+else:
+    print("False")
+
