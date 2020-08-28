@@ -1,3 +1,6 @@
+#special_prime
+'''special_prime:a prime number is equal to the sum of two before consecutive numbers and 1 is equal to
+that prime number then we call that prime as special prime. ex:19=11+7+1'''
 import math
 def prime(n):
     for i in range(2,int(math.sqrt(n))+1):
