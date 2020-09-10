@@ -22,11 +22,10 @@ def aliquot_seq1(n):
         for i in range(1,int(n//2)+1):
             if n%i==0:
                 c+=i
+        if n!=c:
+            return str(n)+" "+str(aliquot_seq1(c))
         else:
-            if n!=c:
-                return str(n)+" "+str(aliquot_seq1(c))
-            else:
-                return n
+            return n
 n=int(input())
 print(aliquot_seq1(n))
     
